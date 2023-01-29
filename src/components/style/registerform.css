@@ -1,0 +1,273 @@
+.main_form{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    width:100%;
+    background: #fff;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before{
+    content: "";
+    position:absolute;
+    bottom: -5px;
+    height: 3px;
+    width: 27px;
+    right: 0px;
+    border-radius: 8px;
+    background-color: orange;
+}
+
+.container form{
+    position: relative;
+    background-color: #fff;
+    min-height:70vh;
+    margin-top: 16px;
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    margin-bottom: 8px;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    flex-wrap: wrap;
+}
+
+.container form .fields .input_field{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% /3 - 25px);
+}
+
+.input_field input{
+    padding:0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 8px 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input_field input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0,0.3);
+}
+
+.input_field label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input_field select{
+    padding:0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 8px 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.second_input_field{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 25px);
+}
+
+.second_input_field label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.second_input_field input{
+    padding:0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 8px 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.second_input_field input:is(:valid , :focus){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.second_input_field select{
+    padding:0 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 8px 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.explain{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 5px 0;
+}
+
+
+.explain textarea{
+    resize: none;
+    padding:5px 10px;
+    border-radius: 5px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    
+}
+.explain label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.file{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.file label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.file input{
+    margin: 8px 0px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.submit input{
+    padding:0 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #aaa;
+    outline: none;
+    margin: 8px 0px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2f2f2f;
+    cursor: pointer;
+    background: rgb(255, 173, 20);
+    
+}
+
+.submit input:hover{
+    background: rgb(223, 145, 0);
+}
+
+@keyframes pulse {
+    from{
+        box-shadow: 
+            0 0 25px #7effb2,
+            0 0 50px #2cd9ff;
+        
+    }
+}
+
+.submit input:focus{
+    animation:
+        pulse 1s ease-in-out;
+}
+
+@media (max-width : 1250px){
+    .container{
+        max-width: 850px;
+    }
+
+}
+
+@media (max-width : 750px){
+    .container form .fields .input_field{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% /2 - 25px);
+    }
+}
+
+@media (max-width : 590px){
+    .container form .fields .input_field{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% /1 - 25px);
+    }
+    .second_input_field{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 1 - 25px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #525050;
+    background-color: #2f2f2f;
+    gap: 4px;
+   
+}
+
+.navbar_lego{
+    width: 80px;
+    height: 80px;
+}
+
+.mainicon{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar_search{
+    margin: 0 5px;
+    flex-grow: 0.15;
+}
+
+.navbar_searchbox form{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 7px;
+    gap: 5px;
+}
+
+.navbar_glass{
+    color: #2f2f2f;
+    cursor: pointer;
+}
+
+.navbar_inputsearch{
+    border: 0;
+    outline: none;
+    flex-grow: 1;
+}
+
+.navbar_inputsearch:hover{
+    border: 0;
+    outline: none;
+}
+
+.navbar_button_submit{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.navbar_items{
+    flex-grow: 0.5;
+    margin-right: 8px;
+}
+.navbar_items ul{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar_item{
+    display: flex;
+    text-align: center;
+    padding: 7px 6px;
+}
+
+.navbar_item:hover{
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.navbar_item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar_menue{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+    .navbar{
+        position:static;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navbar_search{
+       flex-shrink: 10;
+    }
+    .navbar_menue{
+        display: block;
+        margin-left: 20px;
+    }
+    .navbar_items{
+        margin: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        top: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background:none;
+    }
+
+    .navbar_items ul{
+        margin:10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active{
+        margin: 0;
+        visibility: visible;
+        display: flex;
+        background: #242222;
+        top: 80px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        justify-content: center;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+    .navbar_inputsearch{
+        flex-grow: 0.10;
+    }
+}
+
+
