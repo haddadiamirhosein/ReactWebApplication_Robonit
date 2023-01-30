@@ -1,14 +1,20 @@
+@font-face {
+  font-family: iran;
+  src: url(./IRANYekanX-Regular.ttf);
+}
+
 *{
   direction: rtl;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-
+  font-family: iran;
 }
 
 body{
   margin: 0;
   padding: 0;
+  /* font-size: 16px; */
 }
 

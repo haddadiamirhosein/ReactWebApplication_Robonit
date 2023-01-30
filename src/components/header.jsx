@@ -15,7 +15,7 @@ function Header() {
             <h2>15 تا 18 بهمن 1401</h2>
             <h2>بابل ، مازندران ،ایران</h2>
             <div className='header_login'>
-                <Link to={"#"}>همین حالا ثبت نام کنید</Link>
+                <Link to={"/singin"}>همین حالا ثبت نام کنید</Link>
             </div>
         </div>
         

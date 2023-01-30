@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Registerform from './components/registerform';
 import Navbar from './components/navbar';
-import Header from './components/header';
+import Home from './pages/home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import'./App.css'
 
@@ -13,16 +13,19 @@ class App extends Component {
     this.state = {
       members:{},
       number:0,
+      loading:false,
     }
   }
 
   render() { 
     return (
-      // <Registerform/>
+      
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index element={<Header/>} />
+          <Route index element={<Home/>} />
+          <Route path="singin"index element={<Registerform/>} />
+
         </Route>
       </Routes>
     </BrowserRouter>

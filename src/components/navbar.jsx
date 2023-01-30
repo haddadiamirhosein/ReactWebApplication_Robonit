@@ -26,7 +26,9 @@ function Navbar() {
     <nav className='navbar'>
 
         <div className='navbar_lego'>
-            <img className='mainicon' src="robo.png" alt="" />
+            <Link to={'/'} onClick={closeMenu}>
+                <img className='mainicon' src="robo.png" alt="" />
+            </Link>
         </div>
 
         <div className='navbar_search'>
@@ -69,7 +71,7 @@ function Navbar() {
                 </li>
 
                 <li className='navbar_item'> 
-                    <Link to={"#"} onClick={closeMenu}>ثبت نام</Link>
+                    <Link to={"/singin"} onClick={closeMenu}>ثبت نام</Link>
                 </li>
 
                 <li className='navbar_item'>
