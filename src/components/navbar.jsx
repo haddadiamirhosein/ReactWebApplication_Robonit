@@ -75,7 +75,7 @@ function Navbar() {
                 </li>
 
                 <li className='navbar_item'>
-                    <Link to={"#"} onClick={closeMenu}>ورود</Link>
+                    <Link to={"/login"} onClick={closeMenu}>ورود</Link>
                 </li>
 
             </ul>

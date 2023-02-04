@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Registerform from './components/registerform';
 import Navbar from './components/navbar';
 import Home from './pages/home';
+import Login from './pages/login';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import'./App.css'
 
@@ -25,7 +26,7 @@ class App extends Component {
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home/>} />
           <Route path="singin"index element={<Registerform/>} />
-
+          <Route path="login"index element={<Login/>} />
         </Route>
       </Routes>
     </BrowserRouter>
